@@ -7,8 +7,12 @@ import {
 } from '@mui/material';
 import type { ApexOptions } from 'apexcharts';
 import Chart from 'react-apexcharts';
+import Bitcoin from 'src/assets/static/images/placeholders/logo/bitcoin.png';
+import Cardano from "src/assets/static/images/placeholders/logo/cardano.png";
+import Ethereum from "src/assets/static/images/placeholders/logo/ethereum.png";
 import Label from 'src/components/Label';
 import Text from 'src/components/Text';
+
 
 const AvatarWrapper = styled(Avatar)(
   ({ theme }) => `
@@ -151,7 +155,7 @@ function WatchListRow() {
               <AvatarWrapper>
                 <img
                   alt="BTC"
-                  src="src/assets/static/images/placeholders/logo/bitcoin.png"
+                  src={Bitcoin}
                 />
               </AvatarWrapper>
               <Box>
@@ -220,7 +224,7 @@ function WatchListRow() {
               <AvatarWrapper>
                 <img
                   alt="ETH"
-                  src="src/assets/static/images/placeholders/logo/ethereum.png"
+                  src={Ethereum}
                 />
               </AvatarWrapper>
               <Box>
@@ -289,7 +293,7 @@ function WatchListRow() {
               <AvatarWrapper>
                 <img
                   alt="ADA"
-                  src="src/assets/static/images/placeholders/logo/cardano.png"
+                  src={Cardano}
                 />
               </AvatarWrapper>
               <Box>

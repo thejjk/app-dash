@@ -3,6 +3,9 @@ import {
   alpha, Avatar, Box, Button,
   Card, CardContent, Grid, styled, Typography
 } from '@mui/material';
+import Bitcoin from 'src/assets/static/images/placeholders/logo/bitcoin.png';
+import Cardano from "src/assets/static/images/placeholders/logo/cardano.png";
+import Ripple from "src/assets/static/images/placeholders/logo/ripple.png";
 
 const AvatarWrapper = styled(Avatar)(
   ({ theme }) => `
@@ -96,7 +99,7 @@ function Wallets() {
               <AvatarWrapper>
                 <img
                   alt="BTC"
-                  src="src/assets/static/images/placeholders/logo/bitcoin.png"
+                  src={Bitcoin}
                 />
               </AvatarWrapper>
               <Typography variant="h5" noWrap>
@@ -130,7 +133,7 @@ function Wallets() {
               <AvatarWrapper>
                 <img
                   alt="Ripple"
-                  src="src/assets/static/images/placeholders/logo/ripple.png"
+                  src={Ripple}
                 />
               </AvatarWrapper>
               <Typography variant="h5" noWrap>
@@ -164,7 +167,7 @@ function Wallets() {
               <AvatarWrapper>
                 <img
                   alt="Cardano"
-                  src="src/assets/static/images/placeholders/logo/cardano.png"
+                  src={Cardano}
                 />
               </AvatarWrapper>
               <Typography variant="h5" noWrap>
@@ -198,8 +201,9 @@ function Wallets() {
               <AvatarWrapper>
                 <img
                   alt="Cardano"
-                  src="src/assets/static/images/placeholders/logo/cardano.png"
-                />
+                  src={Cardano}
+                  
+                  />
               </AvatarWrapper>
               <Typography variant="h5" noWrap>
                 Cardano
@@ -232,8 +236,9 @@ function Wallets() {
               <AvatarWrapper>
                 <img
                   alt="Cardano"
-                  src="src/assets/static/images/placeholders/logo/cardano.png"
-                />
+                  src={Cardano}
+                 
+                 />
               </AvatarWrapper>
               <Typography variant="h5" noWrap>
                 Cardano
