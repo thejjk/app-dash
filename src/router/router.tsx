@@ -52,6 +52,12 @@ const Forms = Loader(lazy(() => import('src/content/pages/Components/Forms')));
 const StatusMaintenance = Loader(
   lazy(() => import('src/content/pages/Status/Maintenance'))
 );
+const StatusComingSoon = Loader(
+  lazy(() => import('src/content/pages/Status/ComingSoon'))
+);
+const Status404 = Loader(
+  lazy(() => import('src/content/pages/Status/Status404'))
+);
 
 const routes: RouteObject[] = [
   {
@@ -79,6 +85,10 @@ const routes: RouteObject[] = [
           },
         ]
       },
+      {
+        path: '*',
+        element: <Status404 />
+      }
     ]
   },
   {
